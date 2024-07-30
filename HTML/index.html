@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TTwitter</title>
+    <link rel="icon" href="../imagens/Logo TT.png" type="image/png">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="../imagens/Logo TT.png" alt="logoTT">
+        <div class="ababuscar">
+            <input type="text" placeholder="Buscar">
+            <button type="button"><img src="../imagens/Vector.png"></button>
+        </div>
+    </header>
+    <div class="homepage">
+        <nav class="navbar">
+            <a href="../HTML/index.html">
+                <img src="../imagens/HomeOutlined.png" alt="botaohome">
+            </a>
+            <a href="notificationspage">
+                <img src="../imagens/BellOutlined.png" alt="botaonotificacoes">
+            </a>
+            <a href="commentspage">
+                <img src="../imagens/CommentOutlined.png" alt="botaoabadecomentarios">
+            </a>
+            <a href="settingspage">
+                <img src="../imagens/SettingOutlined.png" alt="botaodeconfiguracoes">
+            </a>
+        </nav>
+        <main class="feed">
+            <div class="postar">
+                <div>
+                    <textarea class="textopostar" placeholder="No que você esta pensando"></textarea>
+                </div>
+                <div class="botoespostar">
+                    <div class="iconespostar">
+                        <label for="btn-imagem"><img src="../imagens/ic_baseline-image.png" alt="postarimagem"></label>
+                        <input id="btn-imagem" type="file" accept="image/gif, image/jpeg, image/png, image/jpg">
+                        <buttom>
+                            <img src="../imagens/mingcute_emoji-fill.png" alt="emotes">
+                        </buttom>
+                        <buttom>
+                            <img src="../imagens/ic_outline-link.png" alt="anexo">
+                        </buttom>
+                    </div>
+                    <div class="botaopostar">
+                        <button id="btn-postar" type="button">Postar</button>
+                    </div>
+                </div>    
+            </div>
+            <div class="postagem">
+                <img id="imagemdopost" src="../imagens/image 16.png">
+                    <div class="linksdopost">
+                        <div class="iconeusuario">
+                            <img src="../imagens/Rectangle 64.png" alt="iconedousuario">
+                            <a href="usuariopage">@usuario</a>
+                        </div>
+                        <div class="botoesdopost">
+                            <a><img src="../imagens/MessageOutlined.png" alt="fazercomentario"></a>
+                            <a><img src="../imagens/Vector2.png" alt="curtir"></a>
+                            <a><img src="../imagens/Vector3.png" alt="favoritar"></a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            </div>
+        </main>
+        <aside class="meet">
+            <h3>Pessoas que voce talvez conheça</h3>
+            <div>
+                <div class="iconeusuario">
+                    <img src="../imagens/Rectangle 64.png" alt="iconedousuario">
+                    <a href="usuariopage">@usuario</a>
+                </div>
+                <button type="button">Adicionar</button>
+            </div>
+            <div>
+                <div class="iconeusuario">
+                    <img src="../imagens/Rectangle 64.png" alt="iconedousuario">
+                    <a href="usuariopage">@usuario</a>
+                </div>
+                <button type="button">Adicionar</button>
+            </div>
+            <div> 
+                <div class="iconeusuario">
+                    <img src="../imagens/Rectangle 64.png" alt="iconedousuario">
+                    <a href="usuariopage">@usuario</a>
+                </div>
+                <button type="button">Adicionar</button>
+            </div>
+            <div>
+                <div class="iconeusuario">
+                    <img src="../imagens/Rectangle 64.png" alt="iconedousuario">
+                    <a href="usuariopage">@usuario</a>
+                </div>
+                <button type="button">Adicionar</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

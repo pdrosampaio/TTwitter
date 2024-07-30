@@ -1,0 +1,718 @@
+:root {
+    --var-main-font-family: "Inter", sans-serif;
+    --var-main-font-color-branca: #FFFFFF;
+    --var-main-font-color-azul: #22A2F2;
+    --var-main-font-color-preta: #000000;
+
+    --var-main-cor-azul-escuro: #181B24;
+    --var-main-cor-azul-marinho: #14161D;
+    --var-main-cor-branca: #F2F2F2;
+    --var-main-cor-azul-claro: #105F74;
+    --var-main-cor-usuario: #D9D9D9;
+    --var-main-cor-cinza: #484848;
+}
+
+body {
+    background-color: var(--var-main-cor-azul-escuro);
+    font-family: var(--var-main-font-family);
+
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+.loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginpage main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.loginpage main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerpage, .loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 128.5px
+}
+
+.registerpage main, .loginpage main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro {
+    background-color: var(--var-main-cor-branca);
+    width: 547px;
+    height: 767px;
+    border-radius: 20px;
+}
+
+.loginpage main {
+    background-color: var(--var-main-cor-branca);
+    width: 547px;
+    height: 591px;
+    border-radius: 20px;
+}
+
+.cadastro h1 {
+    margin-bottom: 50px;
+}
+
+.loginpage h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cadastro h1 , .loginpage h1{
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: center;
+}
+
+.registerpage main form, .loginpage form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerpage .dados, .loginpage .dadosentrada{
+    border: 1px solid #222222;
+    border-radius: 6px;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+}
+
+.dados label, .dadosentrada label{
+    background-color: var(--var-main-cor-branca);
+    margin-left: 18.5px;
+    padding: 0px 4px;
+}
+
+.dados input::placeholder, .dadosentrada input::placeholder {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.registerpage main input, .loginpage main input{
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+    
+    width: 370px;
+    height: 24px;
+    padding: 6px 15px 0px 15px;
+}
+
+.registerpage .termos, .loginpage .termos{
+    display: flex;
+    width: 400px;
+    height: 80px;
+}
+
+.registerpage .termos input {
+    width: 1rem;
+    height: 1rem;
+}
+
+.registerpage .termos label {
+    line-height: 24px;
+    text-align: center;
+}
+
+.loginpage {
+    margin-top: 216.5px;
+}
+
+.registerpage a, .loginpage a {
+    color: var(--var-main-cor-azul-claro);
+}
+
+.esqueci {
+    margin-left: 60%;
+}
+
+.fazerlogin {
+    margin-top: 20px;
+}
+
+.fazerlogin a , .fazerregistro {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.fazerregistro {
+    margin-bottom: 50px;
+}
+
+.registerpage button, .loginpage button {
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+
+    background-color: var(--var-main-cor-azul-claro);
+    width: 400px;
+    height: 49px;
+    padding: 15px 20px;
+    gap: 10px;
+    border-radius: 8px;
+    
+    color: var(--var-main-font-color-branca);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    font-family: Inter;
+}
+
+.loginpage main form {
+    gap: 20px;
+}
+
+.loginpage main form .botaoentrar {
+    margin-top: 41px;
+}
+
+.loginpage main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    background-color: var(--var-main-cor-azul-marinho);
+
+    display: flex;
+    align-items: center;
+    gap: 81px;
+}
+
+.logo {
+    width: 60px;
+    height: 62.35px;
+    padding: 16px 43px;
+}
+
+.ababuscar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+
+    background-color: #48484814;
+    border-radius: 20px;
+    width: 670px;
+    height: 35px;
+    padding: 6.38px 17.92px;
+    width: 670px;
+
+}
+
+.ababuscar input {
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+
+    color: #FFFFFF80;
+    font-size: 1.25rem;
+    width: 630px;
+}
+
+.ababuscar input {
+    display: flex;
+}
+
+.ababuscar button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.homepage {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 47px 36px;
+}
+
+.feed {
+    display: flex;
+    padding: 37px 112px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.postar {
+    border: 1px solid #484848;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+    width: 670px;
+}
+
+
+.textopostar {
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+    
+    font-family: var(--var-main-font-family);
+    width: 610px;
+    color: var(--var-main-cor-branca);
+    padding: 10px 30px;
+    height: 40px;
+    resize: none;
+}
+
+.botoespostar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.iconespostar {
+    padding-left: 21px;
+    padding-bottom: 12px;
+}
+
+.iconespostar button {
+    border: none;
+    padding: 0;
+    background: none;
+    outline: none;
+}
+
+#btn-imagem {
+    width: 0;
+}
+
+.botaopostar {
+    padding-right: 23px;
+    padding-bottom: 9px;
+}
+
+.botaopostar button {
+    border: none;
+    padding: 0;
+    background-color: var(--var-main-font-color-azul);
+    outline: none;
+
+    padding: 13px 30px;
+    border-radius: 10px;
+    
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.meet {
+    color: var(--var-main-font-color-branca);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 311px;
+    height: 370px;
+    padding-top: 37px;
+}
+
+.meet h3 {
+    font-size: 1.5rem;
+}
+
+.meet div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.meet .iconeusuario {
+    gap: 8px;
+}
+
+.meet a {
+    text-decoration: none;
+    color: var(--var-main-cor-branca);
+}
+
+.meet button {
+    border: none;
+    padding: 0;
+    background-color: #222222;
+    outline: none;
+
+    color: var(--var-main-font-color-azul);
+    padding: 4.5px 10px;
+    border-radius: 15px;
+}
+
+.postagem {
+    color: var(--var-main-font-color-branca);
+    border: 1px solid #484848;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+    width: 670px;
+}
+
+.postagem .iconeusuario a {
+    font-family: var(--var-main-font-family);
+    text-decoration: none;
+    color: var(--var-main-font-color-branca);
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.postagem .iconeusuario img {
+    width: 50px;
+    height: 50px;
+}
+
+.postagem .iconeusuario {
+    display: flex;
+    align-items: center;
+}
+
+.linksdopost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 73px 0px 97px;
+}
+
+#imagemdopost {
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 14.5%;
+    margin-top: 47px;
+    margin-bottom: 16px;
+}
+
+.postagem p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    margin-left: 97px;
+    margin-top: 27px;
+    margin-bottom: 32px;
+}
+
+@media(max-width: 360px) {
+    .registerpage {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .registerpage img {
+        width: 80px;
+        height: 83px;
+        margin-top: 26px;
+        margin-bottom: 21px;
+    }
+
+    .cadastro {
+        width: 296px;
+        height: 644px;
+        border-radius: 18px;
+    }
+
+    .cadastro .dados {
+        width: 250.5px;
+        height: 49px;
+    }
+
+    .cadastro .dados input {
+        width: 220px;
+    }
+
+    .cadastro .termos {
+        margin-left: 150px;
+    }
+
+    .cadastro .termos label {
+        width: 229px;
+        font-size: 0.75rem;
+    }
+
+    .cadastro .termos input {
+        width: 0.75rem;
+    }
+
+    .cadastro button {
+        width: 201px;
+        height: 37px;
+        font-size: 1rem;
+        padding: 9.5px;
+    }
+
+    .loginpage {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        gap: 91px;
+    }
+
+    .loginpage img {
+        width: 80px;
+        height: 83px;
+        margin-top: 26px;
+        margin-bottom: 0px;
+    }
+
+    .loginpage main {
+        width: 296px;
+        height: 479px;
+        border-radius: 18px;
+    }
+
+    .loginpage h1 {
+        width: 246px;
+        height: 48px;
+        font-size: 1.25rem;
+        margin-top: 17px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    .loginpage main .dadosentada {
+        width: 250.5px;
+        height: 51px;
+    }
+
+    .loginpage main .dadosentrada {
+        width: 250.5px;
+    }
+
+    .esqueci {
+        display: none;
+    }
+
+    .loginpage main .botaoentrar button {
+        width: 201px;
+        height: 37px;
+        font-size: 1rem;
+        padding: 9.5px;
+    }
+
+    .loginpage .termos p {
+        font-size: 0.75rem;
+        width: 279px;
+        height: 48px;
+        margin-left: 90px;
+    }
+
+    .cabecalho {
+        height: 77px;  
+        gap: 0px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        width: 50px;
+        height: 48.88px;
+        padding: 0px;
+        margin-top: 11px;
+        margin-left: 20px;
+        margin-bottom: 18px;
+    }
+
+    .ababuscar {
+        width: 246px;
+        height: 36px;
+        padding: 0px;
+        margin-top: 17px;
+        margin-left: 26px;
+        margin-bottom: 24px;
+
+        border-radius: 20px;
+
+    }
+
+    .ababuscar input {
+        width: 200px;
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+
+    .ababuscar img {
+        width: 21px;
+    }
+
+    .homepage {
+        flex-direction: column-reverse;
+    }
+
+    .meet {
+        flex-direction: row;
+        gap: 0px;
+        height: 70px;
+    }
+
+    .meet h3 {
+        display: none;
+    }
+
+    .meet div {
+        flex-direction: column;
+        height: 78px;
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+
+    .meet div button {
+        display: none;
+    }
+
+    .feed {
+        width: 304px;
+        height: 494px;
+        padding: 35px 30px 0px 30px;
+    }
+
+    .postar {
+        width: 300px;
+        height: 100px;
+        padding: 9px;
+    }
+
+    .textopostar {
+        width: 280px;
+        font-size: 0.75rem;
+        padding: 11px 2px 0px 2px;
+    }
+
+    .botaopostar {
+        width: 94px;
+        height: 24px;
+        padding: 0px;
+    }
+
+    .iconespostar {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .botaopostar {
+        width: 75px;
+        height: 30px;
+        padding-right: 5px;
+    }
+
+    #btn-postar {
+        width: 75px;
+        height: 30px;
+
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0px;
+    }
+
+    .postagem {
+        width: 300px;
+        height: 381px;
+        padding: 0px;
+    }
+
+    #imagemdopost {
+        width: 200px;
+        height: 200px;
+        margin: 32px 52px 0px 48px;
+    }
+
+    .linksdopost {
+        padding: 0px;
+        width: 200px;
+        margin-left: 48px;
+        margin-top: 5px;
+    }
+
+    .linksdopost .iconeusuario {
+        width: 105px;
+        gap: 0px;
+        justify-content: flex-start;
+    }
+
+    .linksdopost .iconeusuario img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .linksdopost .iconeusuario a {
+        font-size: 0.875rem;
+        margin-left: 1px;
+    }
+
+    .botoesdopost {
+        display: flex;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .botoesdopost img {
+        width: 25px;
+        height: 25px;
+        gap: 0.75px;
+    }
+
+    .postagem p {
+        margin: 19px 52px 25px 48px;
+    }
+
+    .navbar {
+        width: 360px;
+        height: 77px;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--var-main-cor-azul-marinho);
+        gap: 24px;
+        padding: 15px 50px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        max-height: 100%;
+        overflow-y: hidden;
+    }
+}
